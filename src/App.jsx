@@ -1,6 +1,8 @@
 import React from "react"
 import Navbar from "./comnponents/navbar/Navbar"
 import Hero from "./comnponents/hero/Hero"
+import Banner from "./comnponents/banner/Banner"
+
 
 
 
@@ -10,6 +12,7 @@ function App() {
     <div className="overflow-x-hidden">
       <Navbar/>
       <Hero/>
+      <Banner/>
     </div>
   )
 }
