@@ -1,6 +1,6 @@
 import React from 'react'
 // import heroBg from "../../assets/heroBg.png"
-import heroImage from "../../assets/hero.png"
+import heroImage from "../../assets/heroimg.png"
 import PrimaryButton from '../../shared/PrimaryButton'
 
 // const bgStyle = {
@@ -30,7 +30,7 @@ const Hero = () => {
                     </div>
                 </div>
                 {/* right image side */}
-                <div className='order-1 sm:order-2'>
+                <div className='order-1 sm:order-2 w-[350px] h[350px]'>
                     <img src={heroImage} alt="image" />
                 </div>
             </div>

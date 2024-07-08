@@ -37,7 +37,7 @@ const Banner = () => {
                     </div>
                 </div>
                 <div className='flex justify-center mt-10 sm:mt-14'>
-                    <PrimaryButton />
+                    <PrimaryButton/>
                 </div>
             </div>
             <div className='absolute top-6 -left-8 sm:bottom-0 sm:left-0 opacity-60'>
@@ -51,6 +51,9 @@ const Banner = () => {
             </div>
             <div className='hidden sm:block absolute bottom-0 right-0'>
                 <img src={Apple} alt="" className='max-w-[200px]'/>
+            </div>
+            <div className="absolute top-1/2 -translate-y-1/2 left-1/3 -translate-x-1/2 opacity-70">
+                <img src={Lemon} alt="" className='max-w-[180px]'/>
             </div>
         </div>
     </>
