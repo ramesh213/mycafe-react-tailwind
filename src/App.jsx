@@ -1,12 +1,19 @@
-import React from "react"
+import React, { useState } from "react"
 import Navbar from "./comnponents/navbar/Navbar"
 import Hero from "./comnponents/hero/Hero"
 import Banner from "./comnponents/banner/Banner"
 import AboutUs from "./comnponents/about/AboutUs"
 import Contact from "./comnponents/contact/Contact"
+import ContactPopup from "./comnponents/dialogbox/ContactPopup"
 
 
 function App() {
+
+  const [popUp, setPopUp] = useState(false);
+
+  const handlePopUp = () => {
+    setPopUp(true);
+  };
 
   return (
     <div className="overflow-x-hidden">
@@ -14,7 +21,8 @@ function App() {
       <Hero/>
       <Banner/>
       <AboutUs/>
-      <Contact/>
+      <Contact handlePopUp = {handlePopUp}/>
+      <ContactPopup popUp = {popUp} setPopUp = {setPopUp}/>
     </div>
   )
 }

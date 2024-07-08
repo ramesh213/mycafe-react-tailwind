@@ -15,7 +15,7 @@ const Banner = () => {
             <div>
                 <h1 className='py-8 text-2xl tracking-wider text-center'>Taste & Feel the tastes</h1>
                 <div className='space-y-10'>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 py-10">
+                    <div className="grid grid-cols-1 px-4 sm:grid-cols-2 gap-4 py-10">
                         <div>
                             <p>
                                 We know that <span className='text-primary'>Time </span>
@@ -25,7 +25,7 @@ const Banner = () => {
                         <div></div>
                     </div>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 py-10">
+                    <div className="grid grid-cols-1 px-4 sm:grid-cols-2 gap-4 py-10">
                     <div></div>
 
                         <div>

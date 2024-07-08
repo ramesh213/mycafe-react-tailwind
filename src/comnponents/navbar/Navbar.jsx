@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaCaretDown, FaUser } from 'react-icons/fa';
 
 const NavLinks = [
@@ -37,13 +37,33 @@ const DropdownLinks = [
   },
 ]
 
+
 const Navbar = () => {
+
+  const [sticky, setSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setSticky(true);
+      } else {
+        setSticky(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <>
-        <div className="bg-white shadow-md">
+        <div className= {` bg-white w-full shadow-md transition-all duration-500 ease-in-out ${sticky ? 'fixed top-0 left-0 z-50' : 'relative'}`}>
             <div className="container flex justify-between py-4 sm:py-3">
               {/* logo section */}
-              <div className="font-bold text-3xl">FoodPoint</div>
+              <div className="font-bold px-4 text-3xl">FoodPoint</div>
                <div>
                 <ul className='flex items-center gap-10'>
                   {
