@@ -21,7 +21,7 @@ const Hero = () => {
                     </div>
                 </div>
                 {/* right image side */}
-                <div className='order-1 sm:order-2 w-[350px] h[350px]'>
+                <div data-aos="zoom-in" className='order-1 sm:order-2 w-[350px] h[350px]'>
                     <img src={heroImage} alt="image" />
                 </div>
             </div>

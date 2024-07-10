@@ -37,7 +37,7 @@ const Contact = ({handlePopUp}) => {
 
                 <button onClick={handlePopUp} className="flex justify-center mt-1 items-center bg-gray-200 text-lg p-1 text-dark px-5 hover:scale-105 duration-300">
                   <FaKeyboard className="mr-2" />
-                  Drop queries here !
+                  Click to text now !
                 </button>
               </div>
             </div>

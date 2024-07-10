@@ -63,7 +63,7 @@ const Navbar = () => {
         <div className= {` bg-white w-full shadow-md transition-all duration-500 ease-in-out ${sticky ? 'fixed top-0 left-0 z-50' : 'relative'}`}>
             <div className="container flex justify-between py-4 sm:py-3">
               {/* logo section */}
-              <div className="font-bold px-4 text-3xl">FoodPoint</div>
+              <div data-aos="zoom-in" className="font-bold px-4 text-3xl">FoodPoint</div>
                <div>
                 <ul className='flex items-center gap-10'>
                   {
