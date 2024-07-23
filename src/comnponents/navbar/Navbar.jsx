@@ -43,7 +43,7 @@ const DropdownLinks = [
   },
 ];
 
-const Navbar2 = () => {
+const Navbar = () => {
   // const [sticky, setSticky] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -135,4 +135,4 @@ const Navbar2 = () => {
   );
 };
 
-export default Navbar2;
+export default Navbar;
